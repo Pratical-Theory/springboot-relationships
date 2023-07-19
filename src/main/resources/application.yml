@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/learning
+    username: postgres
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+#    This will insure data.sql to perform
+    defer-datasource-initialization: true
+# Ensures that data.sql will load
+  sql:
+    init:
+      mode: always
